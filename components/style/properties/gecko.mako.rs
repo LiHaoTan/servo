@@ -4711,7 +4711,7 @@ fn static_assert() {
         }
     }
 
-    ${impl_simple_type_with_conversion("text_emphasis_position")}
+    ${impl_simple_type_with_conversion("text_emphasis_position")} // TODO: not sure if should inline this
 
     pub fn set_text_emphasis_style(&mut self, v: values::computed::TextEmphasisStyle) {
         use values::computed::TextEmphasisStyle;

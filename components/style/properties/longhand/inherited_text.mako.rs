@@ -206,6 +206,16 @@ ${helpers.predefined_type(
     spec="https://drafts.csswg.org/css-text-decor/#propdef-text-emphasis-style",
 )}
 
+${helpers.predefined_type(
+    "text-emphasis-position",
+    "TextEmphasisPosition",
+    "computed::TextEmphasisPosition::over_right()",
+    initial_specified_value="specified::TextEmphasisPosition::over_right()", // TODO similar specified::Color::currentcolor() and this is originally not specified
+    products="gecko",
+    animation_value_type="discrete",
+    spec="https://drafts.csswg.org/css-text-decor/#propdef-text-emphasis-position",
+)}
+
 <%helpers:longhand name="text-emphasis-position" animation_value_type="discrete" products="gecko"
                    spec="https://drafts.csswg.org/css-text-decor/#propdef-text-emphasis-position">
     #[derive(Clone, Copy, Debug, Eq, MallocSizeOf, Parse, PartialEq)]
