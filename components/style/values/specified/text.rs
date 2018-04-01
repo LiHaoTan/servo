@@ -743,7 +743,7 @@ impl From<u8> for TextEmphasisPosition {
 
 #[cfg(feature = "gecko")]
 impl From<TextEmphasisPosition> for u8 {
-    fn from(v: Self) -> u8 {
+    fn from(v: TextEmphasisPosition) -> u8 {
         use gecko_bindings::structs;
 
         let mut result = match v.0 {
