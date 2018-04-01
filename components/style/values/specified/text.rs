@@ -701,6 +701,7 @@ impl TextEmphasisPosition {
     }
 
     #[cfg(feature = "gecko")]
+    /// Converts an enumerated value coming from Gecko to a `TextEmphasisPosition<L>`.
     pub fn from_gecko_keyword(kw: u32) -> Self {
         use gecko_bindings::structs;
 
