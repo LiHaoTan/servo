@@ -15,11 +15,12 @@ use values::generics::text::InitialLetter as GenericInitialLetter;
 use values::generics::text::LineHeight as GenericLineHeight;
 use values::generics::text::MozTabSize as GenericMozTabSize;
 use values::generics::text::Spacing;
-use values::specified::text::{TextEmphasisFillMode, TextEmphasisShapeKeyword, TextEmphasisPosition};
+use values::specified::text::{TextEmphasisFillMode, TextEmphasisShapeKeyword};
 use values::specified::text::TextDecorationLine;
 use values::specified::text::TextOverflowSide;
 
 pub use values::specified::TextAlignKeyword as TextAlign;
+pub use values::specified::TextEmphasisPosition;
 
 /// A computed value for the `initial-letter` property.
 pub type InitialLetter = GenericInitialLetter<CSSFloat, CSSInteger>;
